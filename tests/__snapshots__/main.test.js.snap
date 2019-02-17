@@ -1,38 +1,81 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`test defaults: .editorconfig 1`] = `
-"root = true
+"# http://editorconfig.org
+
+root = true
 
 [*]
+charset = utf-8
 indent_style = space
 indent_size = 2
 end_of_line = lf
-charset = utf-8
-trim_trailing_whitespace = true
 insert_final_newline = true
+trim_trailing_whitespace = true
 
 [*.md]
+insert_final_newline = false
 trim_trailing_whitespace = false
 "
 `;
 
 exports[`test defaults: Generated files 1`] = `
 Array [
+  ".DS_Store",
+  ".autod.conf.js",
   ".editorconfig",
-  ".eslintrc.json",
   ".gitignore",
-  ".npmrc",
-  "LICENSE",
+  ".prettierrc",
+  ".travis.yml",
   "README.md",
+  "app/controller/home.ts",
+  "app/router.ts",
+  "app/service/Test.ts",
+  "appveyor.yml",
+  "config/config.default.ts",
+  "config/config.local.ts",
+  "config/config.prod.ts",
+  "config/plugin.ts",
   "package.json",
+  "test/app/controller/home.test.ts",
+  "test/app/service/Test.test.ts",
+  "tsconfig.json",
+  "tslint.json",
+  "typings/index.d.ts",
 ]
 `;
 
 exports[`test defaults: README.md 1`] = `
 "# cloud
 
-## License
+## QuickStart
 
-MIT &copy; username
+### Development
+
+\`\`\`bash
+$ npm i
+$ npm run dev
+$ open http://localhost:7001/
+\`\`\`
+
+Don't tsc compile at development mode, if you had run \`tsc\` then you need to \`npm run clean\` before \`npm run dev\`.
+
+### Deploy
+
+\`\`\`bash
+$ npm run tsc
+$ npm start
+\`\`\`
+
+### Npm Scripts
+
+- Use \`npm run lint\` to check code style
+- Use \`npm test\` to run unit test
+- se \`npm run clean\` to clean compiled js at development mode once
+
+### Requirement
+
+- Node.js 8.x
+- Typescript 2.8+
 "
 `;
