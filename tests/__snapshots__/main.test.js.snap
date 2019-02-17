@@ -21,7 +21,6 @@ trim_trailing_whitespace = false
 
 exports[`test defaults: Generated files 1`] = `
 Array [
-  ".DS_Store",
   ".autod.conf.js",
   ".editorconfig",
   ".gitignore",
