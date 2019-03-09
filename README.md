@@ -1,6 +1,6 @@
-# template-node-basis
+# template-egg-ts
 
-> my SAO generator for basic node project
+> my SAO generator for node project use eggjs
 
 [![CircleCI](https://circleci.com/gh/template-hub/template-egg-ts.svg?style=svg)](https://circleci.com/gh/template-hub/template-egg-ts)
 
